@@ -1,0 +1,31 @@
+   <!-- 19. Conditionally apply url to image in React component -->
+   
+   <html>
+    <head>
+         <!-- reactcdi links -->
+         <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+         <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+         <!-- babelcdi link -->
+         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+        </head>      
+    
+    <body>
+        <div id="p1"></div>
+        <script type="text/babel">
+                 function Url(){
+                    var t=+prompt()
+                    var[c,setC]=React.useState(t)
+                    var[d,setD]=React.useState("https://rukminim2.flixcart.com/image/850/1000/poster/h/y/f/baby-dog-cubs-psu000000101re-small-original-imaegcsegxtzawap.jpeg?q=90&crop=false")
+                    var[y,setY]=React.useState("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLM5wnyx27QSPjNqUFpZgxAtDgZdrWPE-qWR6ToA9PFnRsiLMJ1u2REzoBqzhRqzcemkk&usqp=CAU")
+                    return(
+                        <div>
+                            
+                         <img src={c%2==0?"https://rukminim2.flixcart.com/image/850/1000/poster/h/y/f/baby-dog-cubs-psu000000101re-small-original-imaegcsegxtzawap.jpeg?q=90&crop=false":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLM5wnyx27QSPjNqUFpZgxAtDgZdrWPE-qWR6ToA9PFnRsiLMJ1u2REzoBqzhRqzcemkk&usqp=CAU"}/>
+                                 <img src={c%2==0?d:y}/>
+                            </div>
+                    )
+                 }
+                 ReactDOM.render(<Url/>,document.getElementById('p1'))
+        </script>
+    </body>
+</html>

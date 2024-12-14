@@ -1,0 +1,26 @@
+ <!-- 29.Print array strings in lowercase in list items -->
+ <html> 
+    <head>
+
+      <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+      <!-- babelcdi link -->
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+  </head>
+  <body>
+      <div id="nj">
+      </div>
+      <script type="text/babel">
+          var p=["hi","hello","hey","i"]
+           var maurya= <i>{
+             
+                  p.map(function(a){
+                           return <li>{a.toLowerCase()}</li>
+                      
+                   })
+                }          
+              </i>
+          ReactDOM.render(maurya,document.getElementById('nj'))
+          </script>
+          </body>
+   </html>

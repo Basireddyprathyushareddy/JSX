@@ -1,0 +1,23 @@
+    <!-- 4.Evaluate logical expression in JSX element in HTML -->
+   <html> 
+    <head>
+           <!-- reactcdi links -->
+           <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+           <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+           <!-- babelcdi link -->
+           <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+    </head>
+    <body>
+        <h1 id=m1></h1>
+            
+        <script type="text/babel">
+             var x="praveen";
+              var y="gubbalaa";
+            //   The ${} syntax allows you to embed variables or expressions directly into a string.
+            //    For example, ${x} ${y} dynamically injects the values of x and y into the string, separated by a space.
+              var mk= <h2>{`${x}${y}`}</h2>;
+              ReactDOM.render(mk,document.getElementById("m1"))
+            
+        </script>
+    </body>
+</html>

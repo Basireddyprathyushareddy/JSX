@@ -1,0 +1,34 @@
+  <!-- 11.Print reverse of string praveen in React component -->
+  <html>
+    <head>
+            <!-- reactcdi links -->
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <!-- babelcdi link -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+
+
+       </head>
+       <body>
+        <div id="p1"></div>
+        <script type="text/babel">
+                 function Rishik (){
+                      var [c,setC] =React.useState("prathyusha") 
+                      
+                      
+                  return(
+
+                      <div>
+                        <h1>{c.split('').reverse().join('')}</h1>
+                        </div>
+                        
+                        
+
+
+                  )
+
+
+                 }
+                 ReactDOM.render(<Rishik/>,document.getElementById('p1'))
+        </script>
+       </body>

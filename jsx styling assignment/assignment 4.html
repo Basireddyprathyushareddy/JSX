@@ -1,0 +1,37 @@
+ <!-- 4.Display each object properties -->
+ <html>
+    <head>
+          <!-- reactcdi links -->
+          <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+          <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+          <!-- babelcdi link -->
+          <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+    </head>
+    <body>
+        <div id="p2"></div>
+        <script type="text/babel">
+             var obj={
+                  Name:"prathyusha",
+                   Age:"21",
+                   Gender:"Female",
+                   a    :"https://i.pinimg.com/736x/36/b5/65/36b565ad1899a72ecb823c00fa58d980.jpg"
+             }
+                    var r=<h1 style={{border:"3px solid",padding:"5%",margin:"5px",color:"navy",boxShadow:"20px 10px 5px 5px"}}>
+                                <img style={{width:"30%",height:"25%",borderRadius:"50%"}} src={obj.a}  />
+                                <h2>name:{obj.Name}</h2>
+                                <h2>age:{obj.Age}</h2>
+                                <h2>gender:{obj.Gender}</h2>
+                        
+                        
+                        
+                        
+                        </h1>
+                
+                    
+           
+               
+            ReactDOM.render(r,document.getElementById("p2"))
+
+        </script>
+    </body>
+</html>

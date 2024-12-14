@@ -1,0 +1,68 @@
+  <!-- 35.Print the given array of students in cards in React component -->
+
+   <html>
+    <head>
+          <!-- reactcdi links -->
+      <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+      <!-- babelcdi link -->
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+     </head>
+     <body >
+        <div id="p1"></div>
+        <script type="text/babel">
+             function Pathu(){
+                  var [students,setStudents]=React.useState([
+                        {
+                           firstname :"surekha",
+                           lastname : "loudiya",
+                           age:22
+                        },
+                        {
+                            firstname:"sirisha",
+                            lastname:"mangala",
+                            age:21
+                        },
+                        {
+                            firstname:"haseena",
+                            lastname:"chuttumiddi",
+                            age:22
+                        },
+                        {
+                            firstname:"prathyusha",
+                            lastname:"basireddy",
+                            age:21
+                        },
+                    ]);
+
+
+
+                    var Card = ({ firstname, lastname, age }) => (
+                <div style={{ border: "2px solid red", padding: "10px", margin: "10px" }}>
+                    <h2>{firstname} {lastname} </h2>
+                    <p> Age: {age}</p>
+                </div>
+            ); 
+            return (
+                <div>
+                    {students.map((s, index) => (
+                        <Card
+                            key={index}
+                            firstname={s.firstname}
+                            lastname={s.lastname}
+                            age={s.age}
+                        />
+                    ))}
+                </div>
+            );
+        };
+
+        ReactDOM.render(<Pathu />, document.getElementById("p1"));  
+              
+
+
+
+              
+        </script>
+     </body>
+     </html>

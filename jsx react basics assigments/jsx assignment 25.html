@@ -1,0 +1,32 @@
+    <!-- 25.Print merged array values in sorted order of given two arrays -->
+    <html> 
+        <head>
+    
+          <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+          <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+          <!-- babelcdi link -->
+          <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+      </head>
+      <body>
+          <div id="nj">
+          </div>
+          <script type="text/babel">
+              var p=[20,40,10,30,50]
+              var r=[90,80,70,60,0]
+               var maurya= <h1>
+                  {
+                       p.concat(r)
+                       .sort(
+                        function(d,c){
+                           return d-c
+                           return c-d
+
+                        }
+                       ).map(function(a){
+                               return <li>{a}</li>
+                          
+                       })
+                  }           
+                  </h1>
+              ReactDOM.render(maurya,document.getElementById('nj'))
+             

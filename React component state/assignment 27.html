@@ -1,0 +1,28 @@
+  <!-- 27.Print only the odd numbers of array of numbers in list items in
+  React component -->
+  <html>
+    <head>
+          <!-- reactcdi links -->
+      <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+      <!-- babelcdi link -->
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+     </head>
+     <body>
+        <div id="p1"></div>
+        <script type="text/babel">
+         function Pathu(){
+            var [p,setP]=React.useState([20,25,30,35,40,45])
+               return(
+                    <div>
+                        {
+                            p.map((a)=>{
+                            return(a%2===1?<li>{a}</li>:"")
+                            })
+                        }
+                        
+                        </div>
+                    )
+                } 
+             ReactDOM.render(<Pathu></Pathu>,document.getElementById('p1'))
+                              

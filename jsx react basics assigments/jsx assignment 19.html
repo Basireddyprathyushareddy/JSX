@@ -1,0 +1,23 @@
+     <!-- 19.Conditionally apply url to image in JSX -->
+   <html> 
+    <head>
+
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <!-- babelcdi link -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+    </head>
+    <body>
+        <div id="nj">
+        </div>
+        <script type="text/babel">
+            var a=+prompt()
+             var maurya=<img src={a%2===0?"https://img.freepik.com/premium-vector/lord-shiva-illustration-with-om-symbol_428817-1960.jpg":"https://qph.cf2.quoracdn.net/main-qimg-ababbd4ef296e9ec14aaac902a76e339-lq"}/> 
+            ReactDOM.render(maurya,document.getElementById('nj'))
+           
+             
+
+             
+        </script>
+    </body>
+</html>

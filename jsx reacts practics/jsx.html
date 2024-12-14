@@ -1,0 +1,47 @@
+<html>
+    <head>
+         <!-- reactcdi links -->
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <!-- babelcdi link -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+                 <script src="msg.js"></script>
+    </head>
+    <body>
+        
+        <h1 id="p1"></h1>
+        <div id="p2"></div>
+        <div id="p3"></div>
+        <script type="text/babel"> 
+                 conosle.log(messages) 
+                    //   we use style place ,(take empty array)and (else)
+             var pra1=React.createElement("h1",{style:{color:'green'}},"Hello prathyusha") 
+             ReactDOM.render(pra1,document.getElementById("p1"))
+
+              var rav2=<h2 style={{color:'red'}}>prathyusha</h2>
+              ReactDOM.render(rav2,document.getElementById("p2"))
+
+
+             var students=["pathu","madhu","nari","vandu","konda","malli"]
+            //   var del1=<h2 style={{color:'navy'}}>Hello Edupoly
+            //     {
+            //                     students.map(function(t){
+            //                             return <li style={{color:"red"}}>{t}</li>
+                        
+            //                         })
+                        
+            //                      } </h2>
+                    //        <li>{students[0]}</li>
+                    //        <li>{students[1]}</li>
+                    //        <li>{students[2]}</li>
+                    //        <li>{students[3]}</li>
+                    //        <li>{students[4]}</li>
+    
+                    //    </h2>
+                   ReactDOM.render(del1,document.getElementById("p3"))
+
+
+
+        </script>
+    </body>
+</html>

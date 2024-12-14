@@ -1,0 +1,30 @@
+     <!-- 20.Print array strings ol and ul in React component -->
+  <html>
+    <head>
+         <!-- reactcdi links -->
+         <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+         <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+         <!-- babelcdi link -->
+         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+        </head>     
+        <body>
+          <div id="p6"></div>
+            <script type="text/babel">
+              function Call(){
+                var[a,setA] = React.useState(['dog','cat','snake','parrot','sparow'])
+             
+                 return(
+                   
+                      <div>
+                      <ol>{a.map((p)=><li>{p}</li>)} </ol>
+                      <ul>{a.map((r)=><li>{r}</li>)}</ul>
+                      </div>
+                    )
+                  }
+                  ReactDOM.render(<Call/>,document.getElementById('p6'))
+                   
+                  
+                      
+            </script>
+        </body>
+        </html>

@@ -1,0 +1,25 @@
+  <!-- 20.Print array values in list items in JSX -->
+  <html> 
+    <head>
+
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <!-- babelcdi link -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+    </head>
+    <body>
+        <div id="nj">
+        </div>
+        <script type="text/babel">
+            var friends=["vanu","raji","siri","hasi","pathu"]
+             var maurya= <h1 style={{color:"green"}}>DEAR FRIENDS
+                {
+                     friends.map(function(a){
+                             return <li style={{color:"navy"}}>{a}</li>
+                        
+                     })
+                }           
+                </h1>
+            ReactDOM.render(maurya,document.getElementById('nj'))
+           
+             

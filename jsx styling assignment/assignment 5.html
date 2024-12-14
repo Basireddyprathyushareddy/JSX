@@ -1,0 +1,60 @@
+  <!-- 5. Display each array object in flex boxes -->
+ <html>
+    <head>
+          <!-- reactcdi links -->
+          <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+          <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+          <!-- babelcdi link -->
+          <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+    </head>
+    <body>
+        <div id="p2"></div>
+        <script type="text/babel">
+         var obj=[
+         {
+                  lastname:"prathyusha",
+                  lastname:"basireddy",
+                   Age:"21",
+                   Gender:"Female"
+                },
+                 {
+                  firstname:"madhu",
+                  lastname:"basireddy",
+                   Age:"23",
+                   Gender:"male"
+                },
+              {
+                  firstname:"narendra",
+                  lastname:"basireddy",
+                   Age:"22",
+                   Gender:"male"
+                },
+               {
+                  firstname:"kondareddy",
+                  lastname:"basireddy",
+                   Age:"25",
+                   Gender:"male"
+                }
+            ]
+            var maurya=<div style={{display:"flex",flexWrap:"wrap"}}>{
+                obj.map(function(a){
+                    return <h1 style={{width:"450px",border:"2px solid",padding:"1%",margin:"5%"}}>
+                               <div style={a.Gender=="male"?{backgroundColor:"lightblue"}:{backgroundColor:"lightpink"}}>
+                              <h2>Firstname:{a.firstname}</h2>
+                              <h2>Lastname:{a.lastname}</h2>
+                              <h2>age:{a.Age}</h2>
+                              <h2>gender:{a.Gender}</h2>
+                        
+                        
+                        
+                        
+                        </div>
+                        </h1>
+                })
+            }
+                </div>
+            ReactDOM.render(maurya,document.getElementById("p2"))
+
+        </script>
+    </body>
+</html>  

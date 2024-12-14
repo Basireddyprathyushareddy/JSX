@@ -1,0 +1,30 @@
+    <!-- 21.Print array strings ol of uppercase and ul of lowercase strings
+    in React component -->
+    <html>
+        <head>
+             <!-- reactcdi links -->
+             <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+             <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+             <!-- babelcdi link -->
+             <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+            </head>  
+            <body>
+                <div id="pp"></div>
+                <script type="text/babel">
+                    function Man(){
+                      var [d,setD] =React.useState(['prathyusha','maneesha','rishik','maurya','vandana']) 
+                    
+                    return(
+                        <div>
+                           <ol>{d.map((a)=><li>{a.toUpperCase()}</li>)}</ol>
+                           <ul>{d.map((p)=><li>{p.toLowerCase()}</li>)}</ul>
+                            
+                            </div>
+                    )
+                    
+                    }
+                      ReactDOM.render(<Man/>,document.getElementById('pp'))
+
+                </script>
+            </body>
+            </html> 

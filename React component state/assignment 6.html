@@ -1,0 +1,36 @@
+   <!-- 6. Print first two character of array values in React component -->
+
+   <html>
+    <head>
+            <!-- reactcdi links -->
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <!-- babelcdi link -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+
+
+       </head>
+    <body>
+        <div id="p1"></div>
+        <script type="text/babel">
+            function Maurya(){
+                   var [x,setC]=React.useState(["prathyusha","surekha","harika","pravalika"])
+                
+
+                return(
+                    <div>
+                       <h1>
+                      {
+                        x.map(function(g){
+                            return(
+                            <h1>{g.slice(0,2)}</h1>)
+                         })
+                      }
+                   </h1>
+                    </div>
+                )
+            }
+            ReactDOM.render(<Maurya/>,document.getElementById('p1'))
+
+        </script>
+    </body>

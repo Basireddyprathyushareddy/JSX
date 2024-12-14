@@ -1,0 +1,27 @@
+    <!-- 18.Display different images conditionally React component -->
+ <html>
+    <head>
+            <!-- reactcdi links -->
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <!-- babelcdi link -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+       </head>
+       <body>
+           <div id="p1"></div>
+        <script type="text/babel">
+                  function Image(){
+                    var d=+prompt()
+                    var [c,setC]=React.useState(d)
+
+                  return(
+                    <div>
+                        <h1>{c%2==0?(<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNrrWHxN14qwXbkKSd25pJu7ixEr90E6ViTg&s"/>):(<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZ3lUOXT3tnL9eqGdcW3HfSvO7J7LmAaRWXxjyCM7khVQFrGe160uTBsWDmCnUvBzYXE&usqp=CAU"/>)}</h1>
+                        </div>
+                    )
+                    }
+                    ReactDOM.render(<Image/>,document.getElementById('p1'))
+                    </script>
+                    </body>
+                    </html>
+   

@@ -1,0 +1,33 @@
+  <!-- 27.Print array strings ol and ul -->
+  <html> 
+    <head>
+
+      <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+      <!-- babelcdi link -->
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+  </head>
+  <body>
+      <div id="nj">
+      </div>
+      <script type="text/babel">
+          var p=["hi","hello","hey","i"]
+           var maurya= <i>
+             <ol>{
+                  p.map(function(a){
+                           return <li>{a}</li>
+                      
+                   })
+                } 
+                </ol>         
+             <ul>{
+                  p.map(function(a){
+                           return <li>{a}</li>
+                      
+                   })
+                } 
+                </ul>         
+              </i>
+          ReactDOM.render(maurya,document.getElementById('nj'))
+          </script>
+          </body>

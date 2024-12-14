@@ -1,0 +1,107 @@
+ <!-- 38.Generation of table in React component -->
+  <html>
+    <head>
+         <!-- reactcdi links -->
+      <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+      <!-- babelcdi link -->
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       </head>
+       <body>
+        <div id="p1"></div>
+        <script type="text/babel">
+                  var Maurya= function (){
+                      var [call,setCall]=React.useState([
+                       { 
+                         "firstname":"prathyusha",
+                         "lastname":"Basireddy",
+                         "age":21
+
+                       },
+                       {
+                        "firstname":"surekha",
+                         "lastname":"loudiya",
+                         "age":22
+                       },
+                           
+                       {
+                        "firstname":"rajeswari",
+                         "lastname":"yaparala",
+                         "age":23
+                       },
+                       {
+                        "firstname":"sirisha",
+                         "lastname":"mangala",
+                         "age":22
+                       },
+                           
+
+                      ])
+                      return(
+                        <div>
+                              <table className="table table-borderd w-75 p-4 table-info border border-2 m-4">
+                                <thead>
+                                      <th>FirstName</th>
+                                      <th>LastName</th>
+                                      <th>Age</th>
+                                      <th>Options</th>
+                                  
+                                      </thead>
+                                      <tbody>
+                                        
+                                        {
+                                          call.map((t,i)=>{
+                                            return(
+                                              <tr>
+                                              <td>{t.firstname}</td>
+                                              <td>{t.lastname}</td>
+                                              <td>{t.age}</td>
+                                              <td>
+                                                <button className="btn-success"
+                                                 onClick={()=>{delaterow(i)}
+                                                }>Delete</button>
+                                                
+                                                </td>
+                                                </tr>
+                                            )
+                                          })
+                                        }
+                                        
+                                        </tbody>
+                                        </table>
+                                        </div>
+                                      )
+                                    }
+                                    ReactDOM.render(<Maurya/>,document.getElementById('p1'))
+                                
+                                        
+                                    </script>
+                                    </body>
+                                </html>
+    
+                                
+                                
+                                
+                          
+                          
+                          
+                          
+                          
+                          
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                          
+                          
+                                
+                                
+                                
+                                
+                                
+                                
